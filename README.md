@@ -1,6 +1,6 @@
 # 🔍 Log Analyzer
 
-A Python-based security log analysis tool that parses SSH authentication logs and firewall logs to automatically detect suspicious activity including brute-force login attempts, repeated firewall blocks, and logins occurring during unusual hours.
+A Python based security log analysis tool that parses SSH authentication logs and firewall logs to automatically detect suspicious activity including brute-force login attempts, repeated firewall blocks, and logins occurring during unusual hours.
 
 ## ✨ Key Features
 
