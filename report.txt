@@ -1,0 +1,35 @@
+============================================================
+LOG ANALYZER REPORT
+Generated: 2026-06-20 13:14:02
+============================================================
+
+[i] PARSING SUMMARY
+  Auth log: 25/25 lines recognized
+  Firewall log: 17/22 lines recognized
+
+[!] BRUTE-FORCE LOGIN ATTEMPTS DETECTED
+  - IP: 203.0.113.45
+    Failed attempts: 8
+    Usernames tried: root
+  - IP: 198.51.100.22
+    Failed attempts: 3
+    Usernames tried: admin
+  - IP: 45.33.32.156
+    Failed attempts: 8
+    Usernames tried: guest
+
+[!] REPEATED FIREWALL BLOCKS
+  - IP: 203.0.113.45 | Blocked 4 times
+  - IP: 45.33.32.156 | Blocked 5 times
+  - IP: 91.198.22.10 | Blocked 6 times
+
+[!] LOGINS DURING UNUSUAL HOURS (12AM - 5AM)
+  - Jun 18 03:14:21 | User: admin | IP: 91.198.22.10
+
+[!] HIGH-CONFIDENCE THREATS (flagged in both auth & firewall logs)
+  - 203.0.113.45 is a strong attack indicator (brute force + firewall blocks)
+  - 45.33.32.156 is a strong attack indicator (brute force + firewall blocks)
+
+============================================================
+END OF REPORT
+============================================================
